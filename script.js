@@ -13,6 +13,12 @@ cartIcon.addEventListener("click", () => {
     cartitemsContainer.classList.add("active");
     searchForm.classList.remove("active");
 });
+Window.onscroll = ()=>
+    {
+        cartitemscontainer.classList.remove('active');
+        searchForm.classList.remove('active');
+        navbar.classList.remove('active');
+    }
 
 var swiper = new Swiper(".wrapper", {
     spaceBetween: 10,
