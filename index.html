@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gfd.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <!-- font family -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -14,13 +18,14 @@
             <a href="index.html">Home</a>
             <a href="cakes.html" target="_blank">Cakes</a>
             <a href="newarrivals.html">New arrivals</a>
-            <a href="">Receipes</a>
+            <a href="receipetemplate.html">Receipes</a>
             <a href="about.html">About</a>
-            <a href="">Contact Us</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
         <div class="icons">
             <div class="search-icon"><i class="fas fa-search"></i></div>
             <div class="cart-icon"><i class="fas fa-shopping-cart"></i></div>
+            <div class="login-icon"><i class="fa-solid fa-user"></i></div>
             <div class="menu-icon"><i class="fas fa-bars"></i></div>
         </div>
         <div class="search-form">
@@ -65,6 +70,16 @@
             </div>
             <a href="" class="btn">Order now</a>
         </div>
+
+        <form action="#" class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <p>Forget your password <a href="#">click here!</a></p>
+            <p>Don't have an account <a href="#">create now!</a></p>
+
+            <input type="submit" value="Login Now" class="btn">
+        </form>
     </header>
     <section class="home" id="home">
         <div class="hero">
@@ -78,122 +93,40 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 
-    <!-- info -->
-     <section class="info-container">
-
-        <div class="info">
-            <img decoding="async" src="Pictures/icons-1.png" alt="">
-            <div class="content">
-                <h3>fast delivery</h3>
-                <span>within 30 minutes</span>
-            </div>
+    <!-- extra -->
+    <div class="heading">
+        <h1>Why we bake</h1>
+    </div>
+    
+    <section class="about">
+        <div class="img">
+             <img decoding="async" src="Pictures/ac0e0a9b80875d9b91b5d0a933e305a4.jpg" alt="">
         </div>
     
-        <div class="info">
-            <img decoding="async" src="Pictures/icons-2.png" alt="">
-            <div class="content">
-                <h3>24 / 7 available</h3>
-                <span>call us anytime</span>
-            </div>
+        <div class="content">
+            <span>welcome to our products</span>
+            <h3>Cake-A-Licious products</h3>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore farhan aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+             farhan aliqua. Ut enim ad minim veniam, quis</p>
+            <!-- <a href="#" class="btn">read more</a> -->
         </div>
-    
-        <div class="info">
-            <img decoding="async" src="Pictures/icons-3.png" alt="">
-            <div class="content">
-                <h3>easy payments</h3>
-                <span>cash or credit</span>
-            </div>
-        </div>
-    
     </section>
-     
-
-    <!-- Review -->
-    <section class="review">
-
-        <div class="box">
-            <div class="user">
-                <img decoding="async" src="Pictures/pic-1.png" alt="">
-                <div class="info">
-                    <h3>edward bey</h3>
-                    <span>happ client</span>
-                </div>
-            </div>
-            <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
-        </div>
-    
-        <div class="box">
-            <div class="user">
-                <img decoding="async" src="Pictures/pic-2.png" alt="">
-                <div class="info">
-                    <h3>jenna bey</h3>
-                    <span>happ client</span>
-                </div>
-            </div>
-            <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
-        </div>
-    
-        <div class="box">
-            <div class="user">
-                <img decoding="async" src="Pictures/pic-3.png" alt="">
-                <div class="info">
-                    <h3>edward bey</h3>
-                    <span>happ client</span>
-                </div>
-            </div>
-            <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
-        </div>
-    
-        <div class="box">
-            <div class="user">
-                <img decoding="async" src="Pictures/pic-4.png" alt="">
-                <div class="info">
-                    <h3>lisa bey</h3>
-                    <span>happ client</span>
-                </div>
-            </div>
-            <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
-        </div>
-    
-        <div class="box">
-            <div class="user">
-                <img decoding="async" src="Pictures/pic-5.png" alt="">
-                <div class="info">
-                    <h3>edward bey</h3>
-                    <span>happ client</span>
-                </div>
-            </div>
-            <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
-        </div>
-    
-        <div class="box">
-            <div class="user">
-                <img decoding="async" src="Pictures/pic-6.png" alt="">
-                <div class="info">
-                    <h3>lalisa bey</h3>
-                    <span>happ client</span>
-                </div>
-            </div>
-            <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
-        </div>
-    
-    </section> 
-
     <!-- External link -->
-    <div class="space"></div>
-
-
-
+ <div class="space"></div>
 <section class="footer">
     <div class="box-container">
         <div class="box">
             <h3>quick links</h3>
         <a href="index.html"> <i class="fas fa-arrow-right"></i> Home</a>
         <a href="cakes.html"> <i class="fas fa-arrow-right"></i>Cakes</a>
-        <a href="#"> <i class="fas fa-arrow-right"></i>About</a>
-        <a href="#"> <i class="fas fa-arrow-right"></i> Review</a>
-        <a href="#"> <i class="fas fa-arrow-right"></i>Blog</a>
-        <a href="#"> <i class="fas fa-arrow-right"></i>Contact</a>
+        <a href="newarrivals.html"> <i class="fas fa-arrow-right"></i>New arrivals</a>
+        <a href="receipetemplate.html"> <i class="fas fa-arrow-right"></i> Receipes</a>
+        <a href="about.html"> <i class="fas fa-arrow-right"></i>About</a>
+        <a href="contact.html"> <i class="fas fa-arrow-right"></i>Contact us</a>
         </div>
 
         <div class="box">
