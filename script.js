@@ -1,24 +1,47 @@
 const searchIcon = document.querySelector(".search-icon");
 const searchForm = document.querySelector(".search-form");
+const loginIcon = document.querySelector(".login-icon");
+const cartIcon = document.querySelector(".cart-icon");
+const menuIcon = document.querySelector(".menu-icon");
+
+const navbar = document.querySelector(".navbar");
+const cartItemsContainer = document.querySelector(".cart-items-container");
+const loginForm = document.querySelector(".login-form");
 
 searchIcon.addEventListener("click", () => {
     searchForm.classList.add("active");
-    cartitemsContainer.classList.remove("active");
+    cartItemsContainer.classList.remove("active");
+    navbar.classList.remove("active");
+    loginForm.classList.remove("active");
 });
-
-const cartIcon = document.querySelector(".cart-icon");
-const cartitemsContainer = document.querySelector(".cart-items-container");
-
+menuIcon.addEventListener("click", () => {
+  navbar.classList.add("active");
+  searchForm.classList.remove("active");
+  cartItemsContainer.classList.remove("active");
+  loginForm.classList.remove("active");
+});
 cartIcon.addEventListener("click", () => {
-    cartitemsContainer.classList.add("active");
+    cartItemsContainer.classList.add("active");
     searchForm.classList.remove("active");
+    navbar.classList.remove("active");
+    loginForm.classList.remove("active");
 });
-Window.onscroll = ()=>
-    {
-        cartitemscontainer.classList.remove('active');
-        searchForm.classList.remove('active');
-        navbar.classList.remove('active');
-    }
+loginIcon.addEventListener("click", () => {
+  loginForm.classList.add("active");
+  searchForm.classList.remove("active");
+  navbar.classList.remove("active");
+  cartItemsContainer.classList.remove("active");
+});
+
+window.onscroll = ()=>{
+  cartItemsContainer.classList.remove("active");
+  searchForm.classList.remove("active");
+  navbar.classList.remove("active");
+  loginForm.classList.remove("active");
+}
+
+// You can add more JavaScript code here if needed
+
 
 var swiper = new Swiper(".wrapper", {
     spaceBetween: 10,
